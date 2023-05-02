@@ -1,0 +1,16 @@
+
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+$custom-theme-colors: (
+    "verde": #C0F64D,
+    "preto": #141620,
+    "cinzaEscuro": #22283B,
+);
+
+
+$theme-colors: map-merge($custom-theme-colors, $theme_colors);
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'custom';

@@ -1,0 +1,140 @@
+
+body{
+    color: #fafafa;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+}
+
+@mixin space{
+  padding: 5rem 1.5rem;
+}
+
+*{
+    // border: 1px dashed hotpink;
+}
+
+
+
+
+@mixin titulo{
+    font-weight: bold;
+    font-size: 4rem; 
+    line-height: 5rem;
+    color: #fff;
+}
+
+
+nav{
+
+  .navbar-toggler{
+    background-color: greenyellow;
+  }
+    color: #fafafa;
+    span{
+
+      color: #fafafa;
+    }
+  .nav-item{
+    margin: 0 1.5rem;
+    a{
+      color: #fafafa;
+      font-size: 1rem;
+      &:hover{
+        background: greenyellow;
+      }
+    }
+  }
+}
+
+
+
+.hero{
+  padding: 133px 0;
+  h1{
+    @include titulo;
+    font-size: 80px;
+    // font-weight: bold;
+    // color: #fff;
+  }
+
+  p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #7E7E7E;
+    padding: 1.5rem 0;
+  }
+  button{
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 700;
+
+  }
+  span{
+    color: darkgray;
+    font-size: 16px;
+  }
+
+}
+
+
+
+
+.servicos{
+  @include space;
+  color: black;
+  h1{
+    font-weight: bold;
+    font-size: 48px;
+  }
+}
+
+.skill{
+  @include space;
+  h1{
+    @include titulo;
+  }
+
+  span{
+    font-size: 12px;
+    color: greenyellow;
+  }
+  h4{
+    font-weight: bold;
+  }
+}
+
+.projetos{
+  @include space;
+  color: black;
+  h1{
+    font-weight: bold;
+    font-size: 48px;
+  }
+}
+
+
+
+
+
+.jota{
+ border-bottom: 1px solid #383838;
+  color: #fff;
+  padding: 1.5rem;
+  h1{
+    background-color: hotpink;
+  }
+}
+
+
+
+
+
+
+
+
